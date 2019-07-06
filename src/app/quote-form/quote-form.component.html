@@ -2,8 +2,8 @@
   <h2 class="text-center">Type or paste a new Quote</h2>
   <hr>
   <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
-    <div class="form-group jumbotron">
-      <h3 *ngIf='newGoal.name'>{{" Quote..."+newGoal.name+" Author:"+newGoal.description}}</h3>
+    <div class="form-group">
+      <p *ngIf='newGoal.name'>{{" Quote..."+newGoal.name+" Author:"+newGoal.description}}</p>
 
     </div>
       <div class="form-group">

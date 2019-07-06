@@ -8,9 +8,13 @@
         <div>
           <h6 id={{i}} appStrikethrough>Quote :{{quote.name}}<hr>Author : {{quote.description}}<hr> Quote Uploaded On : {{quote.completeDate|date|uppercase}}</h6><hr>
           <!-- <button (click)='toggleDetails(i)' class="btn btn-info">Toggle Quote Details</button> -->
-          <button (click)= 'goalDelete(true)'class="btn btn block btn-primary">Up-Vote </button>
-          <button (click)= 'goalDelete(true)'class="btn btn block btn-warning">Down-Vote </button>
-          <button (click)= 'goalDelete(true)'class="btn btn block btn-danger">Delete A Quote </button>
+          <div class="buttons">
+            <button (click)= 'upVote(true)'class="btn btn block btn-primary">Up-Vote </button>
+            <button (click)= 'goalDelete(true)'class="btn btn block btn-warning">Down-Vote </button>
+            <button (click)= 'goalDelete(true)'class="btn btn block btn-danger">Delete A Quote </button><hr>
+
+          </div>
+
 
         </div>
 
@@ -23,5 +27,5 @@
       <app-quote-form (addGoal)="addNewGoal($event)"></app-quote-form>
     </div>
   </div>
-  <p *ngIf='quotes.length > 5'>You have too many goals</p>
+  <p *ngIf='quotes.length ==0'>You have too many goals</p>
 </div>
