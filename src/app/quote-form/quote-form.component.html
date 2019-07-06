@@ -1,8 +1,8 @@
 <div class="container-fluid">
-  <h2 class="text-center">Create a new Goal</h2>
+  <h2 class="text-center">Type or paste a new Quote</h2>
   <hr>
   <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
-    <div class="">
+    <div class="form-group jumbotron">
       <h3 *ngIf='newGoal.name'>{{" Quote..."+newGoal.name+" Author:"+newGoal.description}}</h3>
 
     </div>
@@ -23,12 +23,12 @@
           </div>
       </div>
       <div class="form-group">
-          <label for="complete">Completion</label>
+          <label for="complete">Click To Select the Date : </label><br>
           <input type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate='ngModel' required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Date is required</p>
           </div>
           <button type="submit" class="btn btn-success">Add Quote</button>
-</div>
+        </div>
   </form>
 </div>
