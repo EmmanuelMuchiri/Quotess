@@ -21,12 +21,7 @@ export class QuoteComponent implements OnInit {
       this.quotes.splice(index,1);
     }
   }
-  upVote(goal){
-    let goalLengths = 0;
-    goalLengths+1;
-    // goal.completeDate = new Date(goal.completeDate)
-    // this.quotes.push(goal)
-  }
+
   addNewGoal(goal){
     let goalLength = this.quotes.length;
     goal.id = goalLength+1;
