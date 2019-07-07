@@ -1,7 +1,17 @@
-<p>{{quote.id}}</p>
+<br><p>Quote No :{{quote.id}}</p>
 <p>Your Quote Was Uploaded : {{quote.completeDate|dateCount}} Hours Ago</p>
-<button (click)= "quote.upvotes = quote.upvotes + 1" class="btn btn block btn-outline-primary">Up-Vote <i class="fa fa-thumbs-up"></i></button><p>Upvote(s) : {{quote.upvotes}}</p>
+<div class="buttons-info row">
+  <div class="col-sm-4">
+    <button (click)= "quote.upvotes = quote.upvotes + 1" class="btn btn block btn-outline-primary">Up-Vote <i class="fa fa-thumbs-up"></i></button><p> <br>Upvote(s) : {{quote.upvotes}}</p>
 
-<button (click)= "quote.downvotes = quote.downvotes + 1"class="btn btn block btn-outline-warning">Down-Vote <i class="fa fa-thumbs-down"></i></button><p>DownVote(s) : {{quote.downvotes}}</p>
+  </div>
+<div class="col-sm-4">
+  <button (click)= "quote.downvotes = quote.downvotes + 1"class="btn btn block btn-outline-warning">Down-Vote <i class="fa fa-thumbs-down"></i></button><p> <br>DownVote(s) : {{quote.downvotes}}</p>
 
-<button (click)= 'quoteDelete(true)'class="btn btn block btn-outline-danger">Delete A Quote <i class="fa fa-trash"></i></button>
+</div>
+<div class="col-sm-4">
+  <button (click)= 'quoteDelete(true)'class="btn btn block btn-outline-danger">Delete A Quote <i class="fa fa-trash"></i></button>
+
+</div>
+
+</div>
