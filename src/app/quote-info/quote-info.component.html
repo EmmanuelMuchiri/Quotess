@@ -1,5 +1,5 @@
-<p>{{quotes.id}}</p>
-<p>Your Quote Was Uploaded on : {{quotes.completeDate|dateCount}}</p>
-<button (click)= 'goalDelete(true)'class="btn btn block btn-primary">Up-Vote </button>
-<button (click)= 'goalDelete(true)'class="btn btn block btn-warning">Down-Vote </button>
-<button (click)= 'goalDelete(true)'class="btn btn block btn-danger">Delete A Quote </button>
+<p>{{quote.id}}</p>
+<p>Your Quote Was Uploaded : {{quote.completeDate|dateCount}} Hous Ago</p>
+<button (click)= 'quoteDelete(true)'class="btn btn block btn-primary">Up-Vote </button>
+<button (click)= 'quoteDelete(true)'class="btn btn block btn-warning">Down-Vote </button>
+<button (click)= 'quoteDelete(true)'class="btn btn block btn-danger">Delete A Quote </button>

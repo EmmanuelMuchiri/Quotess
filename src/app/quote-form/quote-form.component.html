@@ -1,14 +1,14 @@
 <div class="container-fluid">
   <h2 class="text-center">Type or paste a new Quote</h2>
   <hr>
-  <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
+  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
-      <p *ngIf='newGoal.name'>{{" Quote..."+newGoal.name+" Author:"+newGoal.description}}</p>
+      <p *ngIf='newQuote.name'>{{" Quote..."+newQuote.name+" Author:"+newQuote.description}}</p>
 
     </div>
       <div class="form-group">
           <label for="name">Type the Quote Here</label>
-          <input type="text" class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" #name='ngModel' required>
+          <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Quote is required</p>
           </div>
@@ -17,14 +17,14 @@
       <div class="form-group">
 
           <label for="name">Author</label>
-          <input type="text" class="form-control" id="description" [(ngModel)]="newGoal.description" name="description" #description='ngModel' required>
+          <input type="text" class="form-control" id="description" [(ngModel)]="newQuote.description" name="description" #description='ngModel' required>
           <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
             <p>The Name Of the Author is required</p>
           </div>
       </div>
       <div class="form-group">
           <label for="complete">Click To Select the Date : </label><br>
-          <input type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate='ngModel' required>
+          <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate='ngModel' required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Date is required</p>
           </div>
