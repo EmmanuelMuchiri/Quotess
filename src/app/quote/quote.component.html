@@ -1,6 +1,6 @@
 <div class="container">
   <h1 class=text-center>QUOTES</h1>
-  <fa name="cog" animation="spin"></fa>
+  <!-- <fa name="cog" animation="spin"></fa> -->
   <hr>
 
   <div class="row">
@@ -8,7 +8,7 @@
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
           <h6><hr>Quote :{{quote.name}}<hr>Author : {{quote.description}}<hr> Date : {{quote.completeDate|date|uppercase}}</h6><hr>
-          <button (click)='toggleDetails(i)' class="btn btn-info">Toggle Quote Details</button>
+          <button (click)='toggleDetails(i)' class="btn btn-secondary">Toggle Quote Details</button>
 
         </div>
 
