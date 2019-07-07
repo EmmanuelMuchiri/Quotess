@@ -1,5 +1,5 @@
 <p>{{quote.id}}</p>
-<p>Your Quote Was Uploaded : {{quote.completeDate|dateCount}} Hous Ago</p>
+<p>Your Quote Was Uploaded : {{quote.completeDate|dateCount}} Hours Ago</p>
 <button (click)= "quote.upvotes = quote.upvotes + 1" class="btn btn block btn-primary">Up-Vote</button><p>Upvote(s) : {{quote.upvotes}}</p>
 
 <button (click)= "quote.downvotes = quote.downvotes + 1"class="btn btn block btn-warning">Down-Vote </button><p>DownVote(s) : {{quote.downvotes}}</p>
