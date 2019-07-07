@@ -6,7 +6,7 @@
     <div class="col-md-6 form-group">
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
-          <h6 id={{i}}><hr>Quote :{{quote.name}}<hr>Author : {{quote.description}}<hr> Date : {{quote.completeDate|date|uppercase}}</h6><hr>
+          <h6><hr>Quote :{{quote.name}}<hr>Author : {{quote.description}}<hr> Date : {{quote.completeDate|date|uppercase}}</h6><hr>
           <button (click)='toggleDetails(i)' class="btn btn-info">Toggle Quote Details</button>
 
         </div>
