@@ -2,6 +2,45 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
+## Developed By
+Emmanuel Muchiri
+
+## Screenshots
+
+<!-- ![homepage](images/screenshots/homepage_yp.png); -->
+## Behavior Driven Development
+
+| Behavior :                                                |                                                Input                                                |                                                                             Output example |
+| :-------------------------------------------------------- | :-------------------------------------------------------------------------------------------------: | -----------------------------------------------------------------------------------------: |
+| User types the quote(s) and the author and selects the date and clicks on Add a Quote(S)|"The Laws of Simplicity: Design, Technology, Business, Life",John Maeda,20 July 2019|                                           |                                                |
+
+## Setup/Installation Requirements
+
+-   Connect to the internet
+-   Download a web browser of your preference
+-   click here to open the link : <https://github.com/EmmanuelMuchiri/Quotes.git>
+## Known Bugs
+    {In case you experience bugs kindly refresh your web page or restart your web browser }
+## Technologies Used
+    { 1 .Angular
+      2, CSS
+      3, bootstrap
+      4, html
+      5, Typescript
+      6, FontAWesome
+    }
+## Support and contact details
+    {Contact me on my email address :Emmanuel.Muchiri@outlook.com}
+### License
+    MIT License
+    Copyright (c) {2019}
+
+
+## Development server
+Github Link :https://github.com/EmmanuelMuchiri/Quotes.git
+
+Live Link:
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
